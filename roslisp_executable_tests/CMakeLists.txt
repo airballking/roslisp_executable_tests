@@ -6,4 +6,9 @@ find_package(catkin REQUIRED COMPONENTS roslisp)
 catkin_package()
 include_directories(${catkin_INCLUDE_DIRS})
 
+#
+# BUILDING SAMPLE EXECUTABLE
+# (AND IMPLICITEDLY MARKING IT FOR INSTALLATION)
+#
+
 add_lisp_executable(talker roslisp-executable-tests roslisp-executable-tests::talker)
